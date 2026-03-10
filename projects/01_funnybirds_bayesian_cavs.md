@@ -21,9 +21,27 @@ Now consider images and their concepts. How can we model concepts in the image? 
 During this project, we would like to verify the geometry of the latent space when we have full control over concepts' relations. In particular, we would like to verify assumptions from papers listed in the first paragraph. The project can be divided into the following parts:
 
 1. Bayesian networks definition (potentially across scales in NMI for the same structure)
+  1.1 Developing a code for generation of tabular dataset which will contain attributes available for FunnyBirds dataset
+  1.2 Ensuring that generation process is parametrized by mututal information - you can generate datasets that produces different level of dependency between attributes
+  1.3 Coding: rather easy, methodology: requires understanding a bit of Bayesian Networks (easy if you find MSO course easy)
+  1.4 Final results - generated tables of attributes that follows given Bayesian network generation procedure
 2. Data generation: FunnyBirds generated according to the (1)
+  *This is probably the most boring part of the project, but may take a while - be sure you don't postpone it*
+  2.1 Launching FunnyBirds codebase, including server etc.
+  2.2 Possibly changing code to enable custom-defined birds
+  2.3 (this step should be done in parallel with the first one, so you know how exactly you can pass dataset with attributes to FunnyBirds' codebase)
+  2.4 Coding: probably annoying and require vague understanding of frontend code, methodology: None
+  2.5 Final results - generated ~50 samples per experiment setup (defined by (1))
 3. Model training (potentially small ConvNext or ResNet)
+  3.1 This is claimed to be done in ~4h in PATCAV work on 1 GPU - so it is possible to do it on Collab; however, I can share HPC (MINI's cluster) access to make mass experiments (contact me before this step to ensure the code will be usable on HPC)
+  3.2 Code might be copy-pasted from any repo, we only need reasonable model, no custom code is really necessery here
+  3.3 Number of models to train may vary depending on the resources, ideally (and unrealistically) hundrests of instances, but making <10 also will do
+  3.4 Coding: easy to None, but adjusting a code will be necessery if you wnt to run it on HPC, methodology: None
+  3.5 Final results - trained and saved instances of models, one for each experiment setup (defined by (1))
 4. Latent space analysis, including testing assumptions from the papers
+  4.1 Making rather simple tests, including computing cosine similarity; here, the methodology of the analysis is the most important thing
+  4.2 Coding: a lot, but of rather in simple numpy/pandas operations, methodology: requires your own intuition what is important, but not reading additional literature
+  4.3 Final results - set of metrics, analysis, etc., that show how latent is structured in each experiment
 
 ## Technical notes
 

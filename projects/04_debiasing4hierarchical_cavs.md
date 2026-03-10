@@ -19,6 +19,18 @@ The important thing in debiasing models is to define bias and model it in latent
 During this project, we would like to evaluate existing debiasing methods on concepts that are hierarchical and verify whether they perform better when CAVs are created to incorporate these hierarchies. Then, we will try to find better alternatives for debiasing these CAVs. Notably, we will verify if using debiasing on one concept will affect other concepts in the hierarchy. The project can be divided into the following parts:
 
 1. Creating CAVs and hierarchical CAVs
+  1.1 Choosing dataset and model, at least 1
+  1.2 Making ~2 CAV methods on them (including hierarchical ones), ensure they have *decent* quality
+  1.3 Code: mostly copy-paste from labs, methodology: mostly presented during labs
+  1.4 Final results - ready to go CAVs on specific model/dataset
 2. Performing debiasing
+  2.1 Choosing debiasing method (will be shown on labs one day)
+  2.2 Making debiasing (may require retraining last layers of the model - generally lightweight operation)
+  2.3 Making analysis of the results (how debiasing affect model)
+  2.4 Code: partially copy-paste from labs, methodology: mostly presented during labs
+  2.5 Final results - debiasing analysis
 3. Creating hierarchical debiasing
+  3.1 Basically the same as in (2), except the debiasing method will be different
+  3.2 The method will be suggested later, but you are encouraged to experiment with your own ideas
 4. Analysis of the results (cross-concepts effects and accuracy metrics)
+  4.1 This step is basically combining results from (2) and (3)

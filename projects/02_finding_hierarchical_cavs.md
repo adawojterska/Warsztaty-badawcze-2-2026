@@ -23,6 +23,21 @@ One approach to hierarchical concepts was proposed in recent weeks in [HCEP](htt
 During this project, we would like to find concepts that form hierarchies and evaluate two CAVs that are mentioned in the previous section. The project can be divided into the following parts:
 
 1. Dataset selection
+  1.1 It can be one reasonable dataset, but it is up to you; you can select something from our knowledge base
+  1.2 Coding: copy-paste from our labs, nothing hard to do, methodology: None
+  1.3 Final results - working code for torch Dataset and Dataloader for the chosen dataset
 2. Search for hierarchical concepts
+  2.1 You are supposed to come up with your on ways to find theses hierarchies, BUT some ideas might be shown during our labs + some approaches are super easy to come up with
+  2.2 Coding: rather simple, methodology: might be tricky, but bare minimum solutions will be easy to understand
+  2.3 Final results - list of concepts that create hierachies in your dataset
 3. Creating and evaluating CAVs for hierarchical data
+  *As a prelimary step, you need to choose two models - one from convolutional family, and one LIP-like (e.g., CLIP)*
+  3.1 You should create CAVs at least with the hirarchical approach proposed during labs and any traditional approach
+  3.2 Evaluation should include basic metrics
+  3.3 Coding: mostly copy-paste from our labs + own implementing hierarchical CAV, methodology: mostly presented during labs
+  3.4 Final results - set of metrics, analysis, etc., that show which approach is better and when
 4. Comparing hierarchies built upon semantic relations and empirical analysis, potentially on both models like ResNet and CLIP
+  *As a prelimary step, you need to decide what is semantic relations and what is empirical in (1) and (2)*
+  4.1 You should do similar analysis as in (3), but with emphasis on comparison two types of hierarchies and two different architectures
+  4.2 Coding, methodology: as in (3)
+  4.3 Final results - set of metrics, analysis, etc., that show any differences between models/types of hierarchies
